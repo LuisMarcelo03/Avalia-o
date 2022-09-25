@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+
+int main()
+
+{
+
+int a, b, c, d, i;
+
+do {
+
+printf("Digite um numero:  \n ");
+
+scanf("%i", &a);
+
+if(a<=0)
+
+printf("Digite um numero positivo!!");
+
+} while (a<=0);
+
+printf(" 1 - ");
+
+b=0;c=1;
+
+a=a-2;
+
+for(i=0;i<=a;i++) {
+
+d=c+b;
+
+printf("%i - ",d);
+
+b=c;c=d;
+
+}
+
+}

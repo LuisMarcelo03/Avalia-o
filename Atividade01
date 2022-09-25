@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+	setlocale(LC_ALL, "portuguese");
+	int a = 1;
+	int b ;
+	int c;
+	
+	printf("Digite um número:");
+	scanf("%d", &b);
+	while(a <= b){
+		c = b * a;
+		printf("%d x %d = %d \n",b,a,c);
+		a++;
+	}
+}
